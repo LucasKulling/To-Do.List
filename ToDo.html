@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset = "utf-8"/>
+        <title>ToDoList</title>
+       <link rel="stylesheet" href="./ToDo.css">
+       <!-- links de iconos -->
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+
+
+    <body>
+      
+        <div id="aviso" class="aviso">
+            <h2>Instrucciones:</h2>
+            <h4>Bienvenido a nuestra página.</h4>
+            <p>En esta Lista de tareas vas a poder crear tareas con el boton amarillo de la derecha</p>
+            <p>➡➡➡➡➡➡</p>
+            <p>Tambien vas a poder eliminar el ultimo elemento de tu lista de tareas con el boton rojo de la izquierda</p>
+            <p>⬅⬅⬅⬅⬅⬅</p>
+            <p>Cuando crees las notas vas a poder editarlas precionandolo el icono "<span class="material-symbols-outlined">edit</span>"</p>
+            <p>Y vas a poder anclar al inicio las notas con el icono de "<span class="material-symbols-outlined" id="pin2">
+                push_pin
+            </span>"</p>
+            <p>¡Muchas Gracias por elegir esta Pagina, Espero que te sirva de mucho!</p>
+            <button id="cerrar-aviso">X</button>
+        </div>
+
+
+
+
+
+        <h1>To Do List</h1>
+        <h3>By: Lucas Agustín Kulling</h3>
+        <div id="botones">
+            <button id="sustraer-objeto">
+                <span class="material-symbols-outlined">
+                    delete
+                </span>
+            </button>
+            <t id="tareas-pendientes">Tareas pendientes: <span id="tareas-pendientes-numero">0</span></t>
+            <button id="añadir-objeto">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </button>
+            
+        </div>
+        <div id="espacio-tareas">
+            <div id="tarea1" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin1">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea1" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button>
+                </div>
+                <t id="texto1">Tarea...</t>
+            </div>
+            <div id="tarea2" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin2">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea2" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button>
+                </div>
+                <t id="texto2">Tarea...</t>
+            </div>
+            <div  id="tarea3" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin3">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea3" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto3">Tarea...</t>
+            </div>
+            <div id="tarea4" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin4">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea4" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto4">Tarea...</t>
+            </div>
+            <div  id="tarea5" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin5">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea5" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button>
+                </div>
+                <t id="texto5">Tarea...</t>
+            </div>
+            <div id="tarea6" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin6">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea6" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto6">Tarea...</t>
+            </div>
+            <div id="tarea7" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin7">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea7" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto7">Tarea...</t>
+            </div>
+            <div id="tarea8" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin8">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea8" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto8">Tarea...</t>
+            </div>
+            <div id="tarea9" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin9">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea9" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto9">Tarea...</t>
+            </div>
+            <div id="tarea10" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin10">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea10" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto10">Tarea...</t>
+            </div>
+            <div id="tarea11" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin11">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea11" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto11">Tarea...</t>
+            </div>
+            <div id="tarea12" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin12">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea12" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto12">Tarea...</t>
+            </div>
+            <div id="tarea13" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin13">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea13" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto13">Tarea...</t>
+            </div>
+            <div id="tarea14" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin14">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea14" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto14">Tarea...</t>
+            </div>
+            <div id="tarea15" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin15">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea15" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto15">Tarea...</t>
+            </div>
+            <div id="tarea16" class="tarea">
+                <div class="iconos-tarea">
+                <button class="seleccionar-tarea">
+                <span class="material-symbols-outlined" id="pin16">
+                    push_pin
+                </span>
+                </button>
+                <button id="editar-tarea16" class="editar-tarea">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button></div>
+                <t id="texto16">Tarea...</t>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="./ToDo.js"></script> 
+    </body>
+
+
+
+</html>

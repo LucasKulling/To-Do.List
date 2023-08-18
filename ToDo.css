@@ -1,0 +1,146 @@
+/* arreglar problema si nos pasamos de texto */
+/* hacerlo responsive */
+
+
+.aviso {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+h2{
+    margin-top: 200px;
+}
+/* ponerle un hover de un color y cambiar el color, tal vez poner arriba  a la derecha */
+#cerrar-aviso{
+    height: 200px;
+    width: 200px ;
+    background-color: transparent;
+    background: transparent;
+    border: none;
+    color: white; 
+    font-size: 75px ;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #1c1018;
+}
+h1{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 50px;
+}
+h3{
+    font-family: 'Barriecito', cursive;
+    margin-top: 0;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Playfair+Display&family=Roboto+Condensed:wght@700&family=Tilt+Prism&display=swap');
+
+
+html{
+    background-image: url(FondoToDo.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+#botones{
+width: 60%;
+height: 130px;
+display: flex;
+}
+
+#tareas-pendientes{
+align-items: center;
+align-self: auto;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+}
+#añadir-objeto{
+    height: 100px;
+    width: 100px;
+    background-color: #f2f3ae;
+    border-radius: 100%;
+    position: sticky;
+    cursor: pointer;
+}
+#sustraer-objeto{
+    height: 100px;
+    width: 100px;
+    background-color: #d72638;
+    border-radius: 100%;
+    position: sticky;
+    cursor: pointer;
+}
+#sustraer-objeto:hover{
+    background-color:red;
+}
+#añadir-objeto:hover{
+    background-color: white;
+}
+.tarea{
+    background-color: yellow;
+    border: 2px solid black;
+    box-shadow: 1px solid black; 
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 250px
+}
+.iconos-tarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#pin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#espacio-tareas{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 10px;
+}
+t{
+    margin: 10px 10px;
+    font-size:25px;
+    font-family: 'Caprasimo', cursive;
+}
+
+.editar-tarea{
+    background-color: transparent;
+    background: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.editar-tarea:hover{
+color: white
+}
+.editar-tarea:active{
+    color: white;
+}
+.seleccionar-tarea{
+    background-color: transparent;
+    background: transparent;
+    border: none;
+}
+.seleccionar-tarea:hover{
+    color: white
+}
+
+
